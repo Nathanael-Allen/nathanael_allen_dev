@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ext": "js,ts,json,html,css,ejs",
+  "exec": "postcss src/static/styles/input.css -o src/static/styles/output.css && tsx src/server.ts"
+}

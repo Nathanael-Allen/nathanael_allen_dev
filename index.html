@@ -10,44 +10,120 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
     <title>Nathanael-Allen.dev</title>
   </head>
   <body>
     <header></header>
     <main>
+      <div id="theme-toggle-container">
+        <button id="theme-toggle-switch-container" tabindex="0">
+          <div id="theme-switch"></div>
+        </button>
+      </div>
       <section id="hero-section">
         <div class="section-div-main">
-          <h1>nathanael<br>&nbsp;allen<br>&nbsp;&nbsp;<span style="color: var(--accent-third)">.dev</span></h1>
+          <h1>
+            nathanael<br />&nbsp;allen<br />&nbsp;&nbsp;<span
+              style="color: var(--accent-third)"
+              >.dev</span
+            >
+          </h1>
         </div>
         <div class="section-div-main">
           <ul>
-            <li><a href="#about" class="hero-link">ABOUT</a></li>
-            <li><a href="#projects" class="hero-link">PROJECTS</a></li >
-            <li><a href="#github" class="hero-link">GITHUB</a></li>
-            <li><a href="#contact" class="hero-link">CONTACT</a></li>
+            <li><a href="#about" class="hero-link page-link">ABOUT</a></li>
+            <li>
+              <a href="#projects" class="hero-link page-link">PROJECTS</a>
+            </li>
+            <li><a href="https://github.com/Nathanael-Allen" target="_blank" class="hero-link">GITHUB</a></li>
+            <li><a href="#contact" class="hero-link page-link">CONTACT</a></li>
           </ul>
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" class="content-section">
         <div class="section-div-main">
           <h2 class="section-header">ABOUT</h2>
         </div>
         <div class="section-div-text">
           <p>
-            Hi, my name is Nathanael and I am a driven web developer that is always trying to learn new things and improve my skills.
+            Hi, my name is Nathanael and I am a driven web developer that is
+            always trying to learn new things and improve my skills.
           </p>
           <p>
-            From 2023 to 2025 I worked full time while attending Portland Community College and graduated with a degree in Web Development and Design.
+            From 2023 to 2025 I worked full time while attending Portland
+            Community College and graduated with an associates degree in Web
+            Development and Design.
           </p>
           <p>
-            On top of my classes I worked constantly on personal projects and tried to learn as much as I could. I built <a href="https://github.com/Nathanael-Allen/books_site" class="link">full stack web applications</a> with <span class="tech-span">Node.js,</span><span class="tech-span"> Sqlite, </span> and <span class="tech-span">HTMX.</span>
+            While was in school I built excellent fundamentals working
+            extensively with <span class="tech-span">HTML</span>,
+            <span class="tech-span">CSS</span>,
+            <span class="tech-span">Javascript</span>,
+            <span class="tech-span">PHP</span>,
+            <span class="tech-span">SQL</span>. I have dabbled with
+            <span class="tech-span">C</span>,
+            <span class="tech-span">Rust</span>,
+            <span class="tech-span">C#</span>, and have a solid understanding of
+            low level concepts, OOP, and functional programming.
           </p>
           <p>
-            I built 
+            On top of my classes and my job, I worked constantly on personal
+            projects and tried to learn as much as I could. I built larger
+            things like
+            <a href="https://github.com/Nathanael-Allen/books_site" class="link"
+              >full stack web applications</a
+            >
+            with <span class="tech-span">Node.js</span>,
+            <span class="tech-span">Express</span>,
+            <span class="tech-span"> Sqlite</span>, and
+            <span class="tech-span">HTMX</span>. But I also did smaller things
+            like basic automation scripts with
+            <span class="tech-span">Python</span> or setting up virtual private
+            servers with <span class="tech-span">SSH</span>, and
+            <span class="tech-span">Bash</span>.
+          </p>
+          <p>
+            When I wasn't working on personal projects I was building
+            <a href="https://coreassociations.com/" class="link">sites</a> for
+            people to market their business. Or help them build logic intensive
+            <a
+              href="https://github.com/Nathanael-Allen/cyber_savage_beta"
+              class="link"
+              >tools</a
+            > 
+            for their table top games using 
+            <span class="tech-span">Typescript</span>,
+            <span class="tech-span">React</span>,
+            <span class="tech-span">Tailwind.css</span>, and
+            <span class="tech-span">Vite</span>. I
+            either host these on a virtual private server that I manage or
+            statically on Github Pages or Cloudflare Pages.
+          </p>
+        </div>
+        <div class="page-break"></div>
+        <div class="section-div-main">
+          <h3 class="section-header-3">PHILOSOPHY</h3>
+        </div>
+        <div class="section-div-text">
+          <p>
+            When it comes to web development I strive to accomplish every goal
+            or deliverable in the simplest, most elegant way I can. Many
+            developers are reaching for large frameworks to build simple static
+            sites, I am a big advocate for starting simple and adding in the
+            complexity only when it is absolutely necessary. If I can build a
+            simple tool myself without adding a big
+            <span class="tech-span">NPM</span> library to my project I will, but
+            I also know when to reach for something like
+            <span class="tech-span">React</span> when the project needs it.
           </p>
         </div>
       </section>
+
+      <footer>
+        
+      </footer>
     </main>
   </body>
 </html>

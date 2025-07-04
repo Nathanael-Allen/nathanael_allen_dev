@@ -10,8 +10,7 @@ window.addEventListener("load", () => {
   const themeSwitchContainer = document.querySelector(
     "#theme-toggle-switch-container"
   );
-
-  let theme = "dark";
+  let theme;
 
   function checkTheme() {
     if (theme === "dark") {
@@ -24,6 +23,7 @@ window.addEventListener("load", () => {
       document.documentElement.style.setProperty("--accent-main","#5bc0be");
       document.documentElement.style.setProperty("--accent-third","#dbb672");
       themeSwitchContainer.style.backgroundColor = "#080a12";
+      localStorage.setItem("theme-preference", "dark");
     } else {
       themeSwitch.style.transform = "translate(100%)";
       document.documentElement.style.setProperty(
@@ -34,8 +34,17 @@ window.addEventListener("load", () => {
       document.documentElement.style.setProperty("--accent-main","rgb(16, 87, 86)");
       document.documentElement.style.setProperty("--accent-third","rgb(146, 107, 35)");
       themeSwitchContainer.style.backgroundColor = "var(--accent-main)";
+      localStorage.setItem("theme-preference", "light");
     }
   }
+
+    let themePreference = localStorage.getItem("theme-preference");
+  if (!themePreference) {
+    theme = "dark";
+  } else {
+    theme = themePreference;
+  }
+  
 
   checkTheme();
 

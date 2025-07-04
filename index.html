@@ -14,7 +14,6 @@
     <title>Nathanael-Allen.dev</title>
   </head>
   <body>
-    <header></header>
     <main>
       <div id="theme-toggle-container">
         <button id="theme-toggle-switch-container" tabindex="0">
@@ -24,10 +23,7 @@
       <section id="hero-section">
         <div class="section-div-main">
           <h1>
-            nathanael<br />&nbsp;allen<br />&nbsp;&nbsp;<span
-              style="color: var(--accent-third)"
-              >.dev</span
-            >
+            nathanael<br /><span style="color: var(--accent-third)">allen</span>
           </h1>
         </div>
         <div class="section-div-main">
@@ -36,8 +32,14 @@
             <li>
               <a href="#projects" class="hero-link page-link">PROJECTS</a>
             </li>
-            <li><a href="https://github.com/Nathanael-Allen" target="_blank" class="hero-link">GITHUB</a></li>
-            <li><a href="#contact" class="hero-link page-link">CONTACT</a></li>
+            <li>
+              <a
+                href="https://github.com/Nathanael-Allen"
+                target="_blank"
+                class="hero-link"
+                >GITHUB</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -48,7 +50,8 @@
         </div>
         <div class="section-div-text">
           <p>
-            Hi, my name is Nathanael and I am a driven web developer that is
+            Hi, my name is Nathanael and I am a driven
+            <span class="tech-span">full stack web developer</span> that is
             always trying to learn new things and improve my skills.
           </p>
           <p>
@@ -72,7 +75,10 @@
             On top of my classes and my job, I worked constantly on personal
             projects and tried to learn as much as I could. I built larger
             things like
-            <a href="https://github.com/Nathanael-Allen/books_site" class="link"
+            <a
+              href="https://github.com/Nathanael-Allen/books_site"
+              class="link"
+              target="_blank"
               >full stack web applications</a
             >
             with <span class="tech-span">Node.js</span>,
@@ -92,14 +98,14 @@
               href="https://github.com/Nathanael-Allen/cyber_savage_beta"
               class="link"
               >tools</a
-            > 
-            for their table top games using 
+            >
+            for their table top games using
             <span class="tech-span">Typescript</span>,
             <span class="tech-span">React</span>,
             <span class="tech-span">Tailwind.css</span>, and
-            <span class="tech-span">Vite</span>. I
-            either host these on a virtual private server that I manage or
-            statically on Github Pages or Cloudflare Pages.
+            <span class="tech-span">Vite</span>. I either host these on a
+            virtual private server that I manage or statically on Github Pages
+            or Cloudflare Pages.
           </p>
         </div>
         <div class="page-break"></div>
@@ -110,20 +116,110 @@
           <p>
             When it comes to web development I strive to accomplish every goal
             and solve problems in the simplest, most elegant way I can. Many
-            developers immediately reach for large frameworks to build simple static
-            sites, I am a big advocate for starting simple and adding in the
-            complexity only when it is absolutely necessary. If I can build a
-            simple tool myself without adding a big
+            developers immediately reach for large frameworks to build simple
+            static sites, I am a big advocate for starting simple and adding in
+            the complexity only when it is absolutely necessary. If I can build
+            a simple tool myself without adding a big
             <span class="tech-span">NPM</span> library to my project I will, but
             I also know when to reach for something like
             <span class="tech-span">React</span> when the project needs it.
           </p>
         </div>
       </section>
-
-      <footer>
-        
-      </footer>
+      <div class="page-break"></div>
+      <div class="page-break"></div>
+      <section id="projects" class="content-section">
+        <div class="section-div-main">
+          <h2 class="section-header">PROJECTS</h2>
+        </div>
+        <div class=""></div>
+        <div class="section-div-main">
+        </div>
+        <div class="section-div-text">
+          <img
+            src="assets/cs-logo-small.png"
+            alt="logo for cyber savage"
+            style="margin: auto"
+          />
+          <p>
+            I built this
+            <a href="https://builder.cyber-savage.com/" class="link"
+              >force builder</a
+            >
+            application for the indie table top skirmish game "Cyber Savage".
+            The builder is a fairly big
+            <span class="tech-span">React</span> application and I have been
+            working on for over six months with a couple of talented table top
+            game designers. It is very logic intensive application with a lot of
+            state management and deeply nested objects. The application is still
+            being actively developed and is updated frequently with rule changes
+            to the game.
+          </p>
+          <div class="img-container">
+            <img
+              src="assets/cyber-screenshot-1.png"
+              alt="screenshot of the cyber savage force builder application"
+              style="height: 20rem; margin: auto"
+            />
+            <img
+              src="assets/cyber-screenshot-2.png"
+              alt="screenshot of the cyber savage force builder application"
+              style="height: 20rem; margin: auto"
+            />
+          </div>
+          <p>
+            This project is being hosted on Cloudflare Pages. I used
+            <span class="tech-span">Tailwind.css</span> for styling components,
+            <span class="tech-span">Vite</span> for building, and
+            <span class="tech-span">Typescript</span> for all the code. The
+            github repository can be found
+            <a
+              href="https://github.com/Nathanael-Allen/cyber_savage_beta"
+              class="link"
+              target="_blank"
+              >here</a
+            >.
+          </p>
+        </div>
+        <div class="page-break"></div>
+        <div class="page-break"></div>
+        <div class="section-div-main">
+        </div>
+        <div class="section-div-text">
+          <img
+            src="assets/core-association-logo.svg"
+            alt="logo for core association management"
+            style="
+              height: 4rem;
+              margin: auto;
+              margin-bottom: 6rem;
+              margin-top: 3rem;
+            "
+          />
+          <p>
+            This is a small marketing site I built for an HOA management
+            company. It is hosted
+            <a href="https://coreassociations.com/" class="link" target="_blank"
+              >here</a
+            >
+            on a Linode VPS that I fully manage. I built a simple backend with
+            <span class="tech-span">Express</span> and
+            <span class="tech-span">Node.js</span> to render
+            <span class="tech-span">EJS</span> templates and handle the contact
+            form submissions.
+          </p>
+          <p>
+            This site will be updated to have more functionality and integration
+            with their other services soon.
+          </p>
+        </div>
+      </section>
+      <div class="page-break"></div>
+      <div class="page-break"></div>
     </main>
+    <footer>
+      <p>503-896-8255</p>
+      <p>nathanael.allen1@gmail.com</p>
+    </footer>
   </body>
 </html>
